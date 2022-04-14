@@ -23,29 +23,6 @@ on:
         default: ""
         required: false
         type: string
-  workflow_dispatch:
-    inputs:
-      build_dir:
-        description: Directory where all the build output will be kept
-        default: 'build'
-        required: false
-        type: string
-      build_type:
-        description: CMake build type
-        default: 'RelWithDebInfo'
-        required: false
-        type: string
-      branch:
-        description: Branch to build the plugin from
-        default: 'master'
-        required: false
-        type: string
-      artifact_name:
-        description: Set non-empty name for the built binary to be published with this artifact name
-        default: ""
-        required: false
-        type: string
-
 
 jobs:
   build_plugin:
